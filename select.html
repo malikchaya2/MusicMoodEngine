@@ -1,0 +1,132 @@
+<style>
+    #myFileInput {
+        display:none;
+    }
+    .back{
+        
+        height: 92%;
+        background: url(s.jpg);
+        
+    }
+    .left{
+        margin-top: 100px;
+        padding-left: 100px;
+        margin-left: 50px; 
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+        color: white; 
+    }
+    .center{
+        margin-top: 150px;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 500;
+        color: white; 
+        font-family: Brush Script MT, Brush Script Std, cursive;
+    }
+    .right{
+        margin-top: 100px;
+        text-align: left;
+        font-size: 50px;
+        font-weight: 800;
+        color: white; 
+    }
+    .height{
+        height: 65%;
+    }
+    .p{
+        font-weight: 600;
+    }
+    .r {
+        position:absolute;
+        top:10;
+        right:10;
+        
+    }
+
+    .b{
+        height: 55px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px; 
+        font-weight: 600;
+        width:100%;
+        /* color: red;  */
+        outline: none; 
+        padding: 10px; 
+        margin: 8px 5px  !important;
+        
+    }
+
+    
+    .cola{
+        background-color: #AEECEF;
+        /* color:  #737373;  */
+        color: 	#595779; 
+    }
+    .colc{
+        background-color: #1AC8ED ;
+        color:   	white; 
+    }
+    .colb{
+        background-color: #80DED9;
+        color: whitesmoke; 
+    }
+    .cold{
+        background-color:#6D9DC5 ;
+        color: white; 
+    }
+    .cole{
+        background-color: #048BA8;
+        color: whitesmoke; 
+    }
+    .colf{
+        background-color: #3066BE;
+        color:  white; 
+    }
+        
+
+        /* 4A6FA5 */
+  
+        </style>
+        
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <title>Document</title>
+        </head>
+        <body  >
+          
+            <div class="container back">
+                <div class="row justify-content-right">
+                        <div class="left col-4 justify-content-right ">
+                            <div class="mb-3">
+                                    I am Feeling...
+                            </div> 
+                                <button type="button" onclick="window.location.href = 'song.html'" class=" mt-5 b cola" id = 'Sad'>Sad</button>
+                                <button type="button" onclick="window.location.href = 'song.html'" class="b colb" id = 'Sad'>Happy</button>
+                                <button type="button" onclick="window.location.href = 'song.html'" class="b colc" id = 'Sad'>Calm</button>
+                                <button type="button" onclick="window.location.href = 'song.html'" class="b cold" id = 'Sad'>Focused</button>
+                                <button type="button" onclick="window.location.href = 'song.html'" class="b cole" id = 'Sad'>Energetic</button>
+                                <button type="button" onclick="window.location.href = 'song.html'" class="b colf" id = 'Sad'>Tired</button>
+                        </div>
+                                <div class="col-7  r  ">
+                                        <input type="file" id="myFileInput" />
+                                        <button type="button" class="r a btn btn-outline-light " onclick="document.getElementById('myFileInput').click()" ><span class="p">Select By Camera</span></button>
+                                       
+                                </div>
+                          
+                
+                    
+                </div>
+               
+            </div>
+          
+            
+        </body>
+        </html>
