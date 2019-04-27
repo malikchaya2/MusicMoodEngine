@@ -4,9 +4,9 @@
 // -->
 // Changes have been made to this file
 
-var AKI = "AKIA34IFIVPZELDNIRNL"
-var SAK = "YXAb5nzID0MkOXg8+efCpRaKV0b9xNBy8AueY7Pk"
-var APIK = 'm34q5pjbKla27qff01SqP7LRvP5hZQcK9rRULlgm'
+var AKI = "'xxxxxxxxx'
+var SAK = 'xxxxxxxxx'
+var APIK = 'xxxxxxxxx'
 var REG = 'us-east-1'
 
 AWS.config.update({
