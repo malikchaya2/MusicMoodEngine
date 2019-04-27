@@ -32,11 +32,13 @@
       .then((stream) => {
         // Attach the video stream to the video element and autoplay.
         player.srcObject = stream;
-      }).catch(handleError);
+      }).catch(
+        //console.log("camera not yet found")
+      );
     }
     function send(imgurl){
-        alert("got it");
-        test("testing");
+        //alert("got it");
+        //test("testing");
         ProcessImage(imgurl)
     }
     //https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/stop

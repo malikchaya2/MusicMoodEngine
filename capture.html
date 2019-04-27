@@ -26,6 +26,9 @@
     #canvas {
         display:none;
     }
+    #spotify_widget{
+        margin-top: 80px;
+    }
         </style>
         
         <!DOCTYPE html>
@@ -39,6 +42,17 @@
             <script src="amazon-cognito-identity.min.js"></script> -->
             <script src="https://sdk.amazonaws.com/js/aws-sdk-2.16.0.min.js"></script>
             <!-- <script src="./app.js"></script> -->
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+            <script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
             <meta charset="UTF-8">
             <title>Document</title>
             <script src="kog.js"></script>
@@ -52,6 +66,9 @@
                 <!-- <script src = "capture.js"> </script>   -->
             <div class="container back">
                 <div class="row ">
+                        <div class = "col-4">
+                                <div id = 'spotify_widget'></div>
+                        </div>
                         <div class="COL-4"></div>
                         <div class="center col-12 justify-content-center text-info">CAPTURE YOUR MOOD</div>
                         <div class="col-4"></div>
@@ -94,7 +111,8 @@
                             <button input type="file" accept="video/*;capture=camcorder" onclick="window.location.href = 'select.html'" type="button" class=" a btn btn-outline-light btn-block"><span class="p">Select Mood Manually</span></button>
                     </div>
                 </div>
-           
+                <div class = "row justify-content-center">
+                </div>
           
             <script src="https://sdk.amazonaws.com/js/aws-sdk-2.431.0.min.js"></script>
             
